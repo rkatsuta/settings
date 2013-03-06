@@ -1,0 +1,23 @@
+// php-versionとphp-buildをhomebrewでinstallが前提
+// install後にphpの各バージョンをビルドし、.soを別途保存。
+// 自作のshで動的に切り替えが可能。
+// 参考web:: http://qiita.com/items/26162a4ebcbbb351b879
+
+// php versionの確認
+rkatsutaMacbookAir:mba rkatsuta$ ls -ltr ~/local/php/versions/
+total 0
+drwxr-xr-x  12 rkatsuta  staff  408  3  6 16:09 5.4.8
+drwxr-xr-x  10 rkatsuta  staff  340  3  6 18:45 5.3.10
+drwxr-xr-x   9 rkatsuta  staff  306  3  6 21:52 5.2.17
+
+// php versionの切り替え
+rkatsutaMacbookAir:settings rkatsuta$ php-version 5.4.8
+SWITCHED PHP VERSION TO: 5.4.8
+NEW PHP ROOT DIRECTORY : /Users/rkatsuta/local/php/versions/5.4.8
+
+// php apacheでのバージョン切り替え apache再起動する。
+rkatsutaMacbookAir:mba rkatsuta$ ~/work/bin/php-change.sh 5.2.17
+Copy /Users/rkatsuta/local/php/versions/5.2.17/libphp5.so to /usr/local/Cellar/httpd/2.2.23/libexec/libphp5.so
+Restarting apache...
+Password:
+
