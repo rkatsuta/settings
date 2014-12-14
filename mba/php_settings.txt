@@ -21,4 +21,3 @@ Copy /Users/rkatsuta/local/php/versions/5.2.17/libphp5.so to /usr/local/Cellar/h
 Restarting apache...
 Password:
 
-end
