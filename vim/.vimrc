@@ -39,3 +39,4 @@ set history=1000                   "コマンド、検索パターンを100個�
 set expandtab                      "Insertモードで<tab> を挿入するのに、適切な数の空白を使う
 set tabstop=4                      "ファイル内の <tab> が対応する空白の数
 set smarttab                       "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする
+set shiftwidth=4                   "自動インデントでずれる幅"
